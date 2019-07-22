@@ -2,7 +2,7 @@
 # users table
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null:false|
+|name|string|null:false|
 |name_kana|string|null:false|
 |nickname|string|null:false|
 |email|string|null:false, unique:true|
@@ -43,7 +43,7 @@
 |------|----|-------|
 |name|string|null:false|
 |explain|text|null:false|
-|category_id|string/references|null:false|
+|category_id|references|null:false,foreign_key:true|
 |size|string|------|
 |item-status|string|null:false|
 |brand_id|references|null:false,foreign_key:true|
