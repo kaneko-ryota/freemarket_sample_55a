@@ -1,0 +1,2 @@
+module NakayamaHelper
+end
